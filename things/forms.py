@@ -7,4 +7,6 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 class ThingForm(forms.ModelForm):
     class Meta:
         model = Thing
-        fields = ['name', 'description', 'quantity']
+        fields = ['name', 'quantity']
+
+    description = forms.CharField(max_length=120, widget=forms.Textarea)
