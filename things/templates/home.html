@@ -9,9 +9,10 @@
   <p>Some stuff about things goes here.</p>
 
   <h1>Signup Form</h1>
-  <form action="/signup", method = "post">
+  <form action="", method = "post">
     {% csrf_token %}
-    <input type="submit" value="Signup">
+    {{form}}
+    <input type="submit" value="Thing">
   </form>
 
 </body>
