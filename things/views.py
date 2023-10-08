@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from .forms import SignUpForm
+from .forms import ThingForm
 
 def home(request):
-    form = SignUpForm()
+    form = ThingForm()
     return render(request, 'home.html', {'form': form})
     
 
