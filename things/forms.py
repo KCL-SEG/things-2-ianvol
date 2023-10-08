@@ -5,5 +5,5 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 class ThingForm(forms.Form):
     name = forms.CharField(label = "Name", max_length=35)
-    description = forms.Textarea(label = "Description")
+    description = forms.Textarea()
     quantity = forms.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(50)])
